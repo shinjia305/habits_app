@@ -33,6 +33,10 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  # RSpecの起動をはやくするため
+  gem 'spring-commands-rspec'
 end
 
 group :development do
@@ -42,10 +46,6 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  # RSpecの起動をはやくするため
-  gem 'spring-commands-rspec'
 end
 
 group :test do
